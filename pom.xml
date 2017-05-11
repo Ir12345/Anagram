@@ -4,7 +4,8 @@
 
   <groupId>core</groupId>
   <artifactId>Anagram</artifactId>
-  <version>1.1</version>
+ <!-- <version>1.1</version> -->
+   <version>${build.version}</version>
   <packaging>jar</packaging>
 
   <name>Anagram</name>
@@ -31,7 +32,8 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>core.App</mainClass>
+							<!-- <mainClass>core.App</mainClass> -->
+							<mainClass>${mainClass}</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
