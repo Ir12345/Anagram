@@ -4,8 +4,8 @@
 
   <groupId>core</groupId>
   <artifactId>Anagram</artifactId>
- <!-- <version>1.1</version> -->
-   <version>${build.version}</version>
+ 	<version>1.1</version> 
+   
   <packaging>jar</packaging>
 
   <name>Anagram</name>
@@ -22,6 +22,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>6.10</version>
+</dependency>
   </dependencies>
   <build>
 		<plugins>
@@ -32,8 +38,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<!-- <mainClass>core.App</mainClass> -->
-							<mainClass>${mainClass}</mainClass>
+							<mainClass>core.Anagram</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
